@@ -1,8 +1,11 @@
-manage: Book.o Laptop.o main.o Resource.o StudyRoom.o
-	g++ -o manage Book.o Laptop.o main.o Resource.o StudyRoom.o
+manage: Book.o helpers.o Laptop.o main.o Resource.o StudyRoom.o
+	g++ -o manage Book.o helpers.o Laptop.o main.o Resource.o StudyRoom.o
 
 Book.o: Book.h Book.cpp Resource.h
 	g++ -c Book.cpp
+
+helpers.o: helpers.h helpers.cpp
+	g++ -c helpers.cpp
 
 Laptop.o: Laptop.h Laptop.cpp Resource.h
 	g++ -c Laptop.cpp

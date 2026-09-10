@@ -15,11 +15,20 @@ Book::Book(const Book& rhs):Resource(rhs){
     author = rhs.author;
 }
 
+string Book::getAuthor() const{
+    return author;
+}
+
+int Book::getPages() const{
+    return pages;
+}
 
 double Book::usageCost() const{
     return pages * 0.01;
 }
 
 void Book::display() const{
-    
+    cout << "Author: " << author << endl;
+    cout << "Pages: " << pages << endl;
+    cout << "Cost: " << usageCost() << endl;
 }

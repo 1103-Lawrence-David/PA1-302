@@ -7,10 +7,20 @@ private:
     T items[20];
 
 public:
-    void add(const T& item);
-    void removeLast();
-    // size_t size() const;
-    void displayAll() const;
+    void add(const T& item){
+
+    }
+    void removeLast(){
+
+    }
+    
+    size_t size() const{
+
+    }
+    
+    void displayAll() const{
+
+    }
 
 };
 #endif
