@@ -4,4 +4,8 @@
 
 int mainMenu(); //Working as of v.0.1.0
 
+void setBooks(int&, string&, string&);
+
+void resourceOut(Resource*, int size);
+
 #endif

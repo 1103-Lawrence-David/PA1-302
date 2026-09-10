@@ -23,11 +23,21 @@ int Book::getPages() const{
     return pages;
 }
 
+void Book::setPages(int p){
+    pages = p;
+}
+
+void Book::setAuthor(string a){
+    author = a;
+}
+
 double Book::usageCost() const{
     return pages * 0.01;
 }
 
 void Book::display() const{
+    cout << "ID:"<< id << endl;
+    cout << "Name: " << name << endl;
     cout << "Author: " << author << endl;
     cout << "Pages: " << pages << endl;
     cout << "Cost: " << usageCost() << endl;

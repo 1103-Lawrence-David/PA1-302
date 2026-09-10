@@ -22,3 +22,36 @@ int mainMenu(){ //Working
     }
     return uChoice;
 }
+
+void setBooks(int& p, string& a, string& n){
+    bool run = true;
+    string inCheck;
+    while(run == true){
+        cout << "Please input the name of the course." << endl;
+
+        cin >> n;
+
+        cout << "please input the author of the book" << endl;
+
+        cin >> a;
+
+        cout << "please input the amount of pages." << endl;
+
+        cin >> p;
+
+        cout << "if this is correct, please input the word yes. if it is incorrect, type anything else." << endl;
+
+        cin >> inCheck;
+        if(inCheck == "yes" || inCheck == "Yes" || inCheck == "YES"){
+            run = false;
+        }
+    }
+}
+
+void resourceOut(Resource* r, int size){
+    cout << endl;
+    for(int i = 0; i < size; i++){
+        r[i].display();
+        cout << endl;
+    }
+}

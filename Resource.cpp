@@ -14,6 +14,14 @@ Resource::Resource(const Resource& rhs){
     name = rhs.name;
 }
 
+void Resource::setId (int i){
+    id = i;
+}
+
+void Resource::setName (string n){
+    name = n;
+}
+
 Resource::~Resource(){
 
 }

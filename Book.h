@@ -14,6 +14,9 @@ class Book: public Resource{
         string getAuthor() const;
         int getPages() const;
 
+        void setPages(int);
+        void setAuthor(string);
+
         double usageCost() const override;
         void display() const override;
 };
