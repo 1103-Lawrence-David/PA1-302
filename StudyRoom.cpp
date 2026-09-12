@@ -21,6 +21,8 @@ double StudyRoom::usageCost() const{
 }
 
 void StudyRoom::display() const{
+    cout << "ID:"<< id << endl;
+    cout << "Name: " << name << endl;
     cout << "Occupancy: " << occupancy << endl;
     cout << "Reservation Fee: " << reservationFee << endl;
     cout << "Cost: " << usageCost() << endl;

@@ -5,7 +5,7 @@
 int mainMenu(); //Working as of v.0.1.0
 
 void setBooks(int&, string&, string&);
-
-void resourceOut(Resource*, int size);
+void setLaptops(int&, double&, string&);
+void setStudyRoom(int&, double&, string&);
 
 #endif

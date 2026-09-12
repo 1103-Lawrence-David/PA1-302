@@ -5,7 +5,7 @@ Laptop::Laptop():Resource(){
     hoursUsed -3;
 }
 
-Laptop::Laptop(double hr, int hu, int i, string a):Resource(i, a){
+Laptop::Laptop(double hr, int hu, int i, string n):Resource(i, n){
     hourlyRate = hr;
     hoursUsed = hu;
 }
@@ -20,6 +20,8 @@ double Laptop::usageCost() const{
 }
 
 void Laptop::display() const{
+    cout << "ID:"<< id << endl;
+    cout << "Name: " << name << endl;
     cout << "Hours Used: " << hoursUsed << endl;
     cout << "Hourly Rate: " << hourlyRate << endl;
     cout << "Cost: " << usageCost() << endl;

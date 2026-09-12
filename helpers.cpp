@@ -48,10 +48,52 @@ void setBooks(int& p, string& a, string& n){
     }
 }
 
-void resourceOut(Resource* r, int size){
-    cout << endl;
-    for(int i = 0; i < size; i++){
-        r[i].display();
-        cout << endl;
+void setLaptops(int& hu, double& hr, string& n){
+    bool run = true;
+    string inCheck;
+    while(run == true){
+        cout << "Please input the name of the laptop." << endl;
+
+        cin >> n;
+
+        cout << "please input the hours the laptop was used" << endl;
+
+        cin >> hu;
+
+        cout << "please input the hourly rate." << endl;
+
+        cin >> hr;
+
+        cout << "if this is correct, please input the word yes. if it is incorrect, type anything else." << endl;
+
+        cin >> inCheck;
+        if(inCheck == "yes" || inCheck == "Yes" || inCheck == "YES"){
+            run = false;
+        }
+    }
+}
+
+void setStudyRoom(int& o, double& r, string& n){
+    bool run = true;
+    string inCheck;
+    while(run == true){
+        cout << "Please input the name of the Study Room." << endl;
+
+        cin >> n;
+
+        cout << "please input the occupancy" << endl;
+
+        cin >> o;
+
+        cout << "please input the reservation fee." << endl;
+
+        cin >> r;
+
+        cout << "if this is correct, please input the word yes. if it is incorrect, type anything else." << endl;
+
+        cin >> inCheck;
+        if(inCheck == "yes" || inCheck == "Yes" || inCheck == "YES"){
+            run = false;
+        }
     }
 }
